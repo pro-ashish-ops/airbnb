@@ -1,0 +1,144 @@
+.plus-jakarta-sans-body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+/* footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.f-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #ebebeb;
+}
+
+.f-info-socials,
+.f-info-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+.f-info-socials i,
+.f-info-links a {
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.listing-card{
+    border: none !important;
+    margin-top: 2rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+
+
+.listing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.show-img{
+    height: 40vh !important;
+    width: 30vw !important;
+}
+
+.show-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-btn{
+    background-color: green !important;
+     border: none !important;
+}
+
+.edit-btn a{
+    text-decoration: none;
+    color: azure;
+}
+
+.del-btn{
+     background-color: #fe424d !important;
+     border: none !important;
+}
+.show-btn{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.submit-btn{
+    background-color: green !important;
+     border: none !important;
+}
+
+.row{
+    /* display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between; */
+}
+.card {
+     /* flex: 0 1 calc(50% - 0.5rem);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #fff;
+  box-sizing: border-box; */
+}
