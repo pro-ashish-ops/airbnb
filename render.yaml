@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: airbnb-node-app
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node app.js
+    branch: main
+    repo: https://github.com/pro-ashish-ops/airbnb.git
