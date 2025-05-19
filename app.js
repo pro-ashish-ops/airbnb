@@ -18,7 +18,6 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user.js");
 
-// const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 const dbUrl = process.env.ATLASDB_URL;
 
 main()
@@ -39,7 +38,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 const store = MongoStore.create({
-    mongUrl: dbUrl,
+    mongoUrl: dbUrl,
     crypto: {
         secret: process.env.SECRET,
     },
@@ -92,5 +91,5 @@ app.use((err, req, res, next) => {
 
 
 app.listen(3000, () => {
-    console.log("server is listening on port 8080");
+    console.log("server is listening on port 3000");
 });
